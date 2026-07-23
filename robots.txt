@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdulbasit-j.github.io/portfolio/sitemap.xml

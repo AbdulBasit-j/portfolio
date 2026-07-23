@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Basit — Full-Stack Developer | Java, Spring Boot &amp; React</title>
+<meta name="description" content="Abdul Basit is a full-stack developer building production-grade web systems with Java, Spring Boot, PostgreSQL and React — e-commerce platforms, SaaS client portals and content platforms.">
+<meta name="keywords" content="Abdul Basit, full-stack developer, Java developer, Spring Boot developer, React developer, backend engineer, portfolio">
+<meta name="author" content="Abdul Basit">
+<link rel="canonical" href="https://abdulbasit-j.github.io/portfolio/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abdul Basit — Full-Stack Developer">
+<meta property="og:description" content="Full-stack developer building production-grade web systems with Java, Spring Boot, PostgreSQL and React.">
+<meta property="og:url" content="https://abdulbasit-j.github.io/portfolio/">
+<meta property="og:site_name" content="Abdul Basit — Portfolio">
+<meta property="og:image" content="https://abdulbasit-j.github.io/portfolio/og-image.png">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abdul Basit — Full-Stack Developer">
+<meta name="twitter:description" content="Full-stack developer building production-grade web systems with Java, Spring Boot, PostgreSQL and React.">
+<meta name="twitter:image" content="https://abdulbasit-j.github.io/portfolio/og-image.png">
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0E0F1A">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abdul Basit",
+  "jobTitle": "Full-Stack Developer",
+  "email": "mailto:basitjatoi17@gmail.com",
+  "url": "https://abdulbasit-j.github.io/portfolio/",
+  "sameAs": ["https://github.com/AbdulBasit-j"],
+  "knowsAbout": ["Java", "Spring Boot", "React", "PostgreSQL", "Spring Security", "REST APIs", "Node.js"],
+  "worksFor": { "@type": "Organization", "name": "Independent" }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+  :root{
+    --bg:#0E0F1A;
+    --bg-2:#151726;
+    --card:#1A1D2E;
+    --line:#2A2D42;
+    --text:#C7CAD9;
+    --text-dim:#8A8DA3;
+    --heading:#F5F6FA;
+    --violet:#7C5CFC;
+    --cyan:#3FD0C9;
+    --grad:linear-gradient(135deg,#7C5CFC,#3FD0C9);
+
+    --f-display:'Poppins', sans-serif;
+    --f-body:'Inter', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--f-body); font-size:16px; line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit; text-decoration:none;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--cyan); outline-offset:3px;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1140px; margin:0 auto; padding:0 28px;}
+  section{padding:96px 0;}
+  h1,h2,h3{font-family:var(--f-display); color:var(--heading); margin:0;}
+
+  .eyebrow{
+    font-family:var(--f-body); font-weight:600; font-size:13px; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--cyan); margin:0 0 12px;
+  }
+  .sec-title{font-size:clamp(26px,3vw,34px); font-weight:700; margin-bottom:14px;}
+  .sec-desc{color:var(--text-dim); max-width:56ch; margin:0 0 48px; font-size:15.5px;}
+
+  /* ---------- Navbar ---------- */
+  .navbar{
+    position:sticky; top:0; z-index:100;
+    background:rgba(14,15,26,0.85); backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1140px; margin:0 auto; padding:18px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{font-family:var(--f-display); font-weight:800; font-size:20px; color:var(--heading);}
+  .logo span{background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .nav-links{display:flex; align-items:center; gap:32px; list-style:none; margin:0; padding:0;}
+  .nav-links a{font-size:14.5px; font-weight:500; color:var(--text);}
+  .nav-links a:hover{color:var(--heading);}
+  .nav-cta{
+    font-size:14px; font-weight:600; padding:10px 20px; border-radius:8px;
+    background:var(--grad); color:#0E0F1A;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{padding:110px 0 90px;}
+  .hero-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:50px; align-items:center;}
+  .hero-hi{
+    display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600;
+    color:var(--cyan); margin-bottom:18px;
+  }
+  .hero h1{font-size:clamp(36px,5vw,54px); line-height:1.12; margin-bottom:10px;}
+  .hero h1 .grad-text{background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .role-line{
+    font-family:var(--f-display); font-weight:600; font-size:20px; color:var(--text);
+    margin-bottom:20px; min-height:28px;
+  }
+  .role-line .cursor{display:inline-block; width:2px; background:var(--cyan); margin-left:2px; animation:blink 1s step-end infinite;}
+  @keyframes blink{50%{opacity:0;}}
+  .hero p.desc{color:var(--text-dim); max-width:50ch; margin:0 0 34px; font-size:16px;}
+  .hero-cta{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:34px;}
+  .btn{
+    font-family:var(--f-body); font-weight:600; font-size:14.5px;
+    padding:14px 26px; border-radius:8px; display:inline-flex; align-items:center; gap:8px;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn-grad{background:var(--grad); color:#0E0F1A;}
+  .btn-grad:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(124,92,252,0.35);}
+  .btn-outline{border:1px solid var(--line); color:var(--text);}
+  .btn-outline:hover{border-color:var(--cyan); color:var(--heading);}
+  .hero-socials{display:flex; gap:14px;}
+  .hero-socials a{
+    width:40px; height:40px; border:1px solid var(--line); border-radius:50%;
+    display:flex; align-items:center; justify-content:center; color:var(--text);
+  }
+  .hero-socials a:hover{border-color:var(--cyan); color:var(--cyan);}
+
+  .avatar-wrap{position:relative; display:flex; justify-content:center;}
+  .avatar-blob{
+    width:320px; height:320px; border-radius:42% 58% 65% 35% / 45% 40% 60% 55%;
+    background:var(--grad); display:flex; align-items:center; justify-content:center;
+    position:relative;
+  }
+  .avatar-inner{
+    width:270px; height:270px; border-radius:50%; background:var(--bg-2);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--f-display); font-weight:800; font-size:72px; color:var(--heading);
+    border:1px solid var(--line);
+  }
+  .badge{
+    position:absolute; bottom:10px; right:0; background:var(--card);
+    border:1px solid var(--line); border-radius:12px; padding:10px 16px;
+    font-size:12.5px; font-weight:600; color:var(--heading);
+    display:flex; align-items:center; gap:8px;
+  }
+  .badge .dot{width:8px; height:8px; border-radius:50%; background:var(--cyan);}
+
+  /* ---------- About ---------- */
+  .about{background:var(--bg-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .about-grid{display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:center;}
+  .about-visual{
+    aspect-ratio:1; border-radius:20px; background:var(--card); border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;
+  }
+  .about-visual i{font-size:80px; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .about-text p{color:var(--text); margin:0 0 16px; font-size:15.5px; max-width:56ch;}
+  .stat-row{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:30px;}
+  .stat{border:1px solid var(--line); border-radius:12px; padding:18px 16px; background:var(--card);}
+  .stat b{display:block; font-family:var(--f-display); font-size:24px; color:var(--heading);}
+  .stat span{font-size:12.5px; color:var(--text-dim);}
+
+  /* ---------- Skills ---------- */
+  .skills-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px 40px;}
+  .skill{margin-bottom:4px;}
+  .skill-top{display:flex; justify-content:space-between; font-size:14px; margin-bottom:8px;}
+  .skill-top b{color:var(--heading); font-weight:600;}
+  .skill-top span{color:var(--text-dim); font-family:var(--f-display);}
+  .bar-track{height:8px; background:var(--line); border-radius:6px; overflow:hidden;}
+  .bar-fill{height:100%; border-radius:6px; background:var(--grad);}
+  .skills-note{font-size:12.5px; color:var(--text-dim); margin-top:36px;}
+
+  /* ---------- Timeline ---------- */
+  .timeline{position:relative; padding-left:32px; border-left:2px solid var(--line);}
+  .t-item{position:relative; padding-bottom:40px;}
+  .t-item:last-child{padding-bottom:0;}
+  .t-item::before{
+    content:""; position:absolute; left:-38px; top:2px; width:14px; height:14px;
+    border-radius:50%; background:var(--grad); border:3px solid var(--bg);
+  }
+  .t-year{font-family:var(--f-display); font-size:12.5px; color:var(--cyan); font-weight:600; margin-bottom:6px;}
+  .t-title{font-size:17px; font-weight:600; color:var(--heading); margin:0 0 6px;}
+  .t-desc{font-size:14.5px; color:var(--text-dim); margin:0; max-width:56ch;}
+
+  /* ---------- Work grid ---------- */
+  .work-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  .work-card{
+    border:1px solid var(--line); border-radius:16px; background:var(--card);
+    overflow:hidden; transition:transform .18s ease, border-color .18s ease;
+  }
+  .work-card:hover{transform:translateY(-4px); border-color:var(--cyan);}
+  .work-visual{
+    height:150px; background:var(--grad); display:flex; align-items:center; justify-content:center;
+    opacity:0.9;
+  }
+  .work-visual i{font-size:44px; color:rgba(14,15,26,0.55);}
+  .work-body{padding:22px 22px 24px;}
+  .work-top{display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; gap:10px;}
+  .work-title{font-size:18px; font-weight:600; color:var(--heading);}
+  .work-status{font-size:10.5px; font-weight:600; text-transform:uppercase; padding:3px 9px; border-radius:20px; letter-spacing:0.04em;}
+  .work-status.shipped{background:rgba(63,208,201,0.14); color:var(--cyan);}
+  .work-status.progress{background:rgba(124,92,252,0.16); color:var(--violet);}
+  .work-sub{font-size:12.5px; color:var(--text-dim); margin:0 0 12px;}
+  .work-desc{font-size:14px; color:var(--text); margin:0 0 16px;}
+  .work-tags{display:flex; flex-wrap:wrap; gap:7px;}
+  .work-tags span{font-size:11px; color:var(--text-dim); border:1px solid var(--line); border-radius:20px; padding:4px 10px;}
+
+  /* ---------- Contact ---------- */
+  .contact{background:var(--bg-2); border-top:1px solid var(--line);}
+  .contact-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px;}
+  .contact-info-item{display:flex; gap:14px; align-items:flex-start; margin-bottom:26px;}
+  .contact-info-item i{
+    width:42px; height:42px; border-radius:10px; background:var(--card); border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; color:var(--cyan); flex-shrink:0;
+  }
+  .contact-info-item b{display:block; color:var(--heading); font-size:14.5px; margin-bottom:2px;}
+  .contact-info-item span, .contact-info-item a{font-size:14px; color:var(--text-dim);}
+  .contact-info-item a:hover{color:var(--cyan);}
+
+  form{display:flex; flex-direction:column; gap:16px;}
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  input, textarea{
+    width:100%; background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:14px 16px; color:var(--heading); font-family:var(--f-body); font-size:14.5px;
+  }
+  input::placeholder, textarea::placeholder{color:var(--text-dim);}
+  input:focus, textarea:focus{outline:none; border-color:var(--cyan);}
+  textarea{resize:vertical; min-height:130px;}
+  .form-note{font-size:12px; color:var(--text-dim); margin-top:-6px;}
+
+  footer{padding:36px 0; border-top:1px solid var(--line); text-align:center;}
+  footer p{font-size:13px; color:var(--text-dim); margin:0;}
+
+  @media (max-width:860px){
+    .hero-grid, .about-grid, .contact-grid{grid-template-columns:1fr;}
+    .avatar-wrap{order:-1;}
+    .skills-grid, .work-grid, .form-row, .stat-row{grid-template-columns:1fr;}
+    .nav-links{display:none;}
+    section{padding:64px 0;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="logo">Abdul<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="mailto:basitjatoi17@gmail.com">Hire Me</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hero-hi"><i class="fa-solid fa-hand-sparkles"></i> Hi, I'm</p>
+      <h1>Abdul <span class="grad-text">Basit</span></h1>
+      <p class="role-line" id="roleText">Full-Stack Developer<span class="cursor">&nbsp;</span></p>
+      <p class="desc">I build complete web systems — data model, API, and interface. Java and Spring Boot on the backend, React on the front. Five shipped systems below, from an e-commerce order pipeline to a multi-source content platform.</p>
+      <div class="hero-cta">
+        <a class="btn btn-grad" href="#work">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn btn-outline" href="#contact">Contact Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:basitjatoi17@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/AbdulBasit-j" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    <div class="avatar-wrap">
+      <div class="avatar-blob">
+        <div class="avatar-inner">AB</div>
+        <div class="badge"><span class="dot"></span> Open to work</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual"><i class="fa-solid fa-code"></i></div>
+    <div class="about-text">
+      <p class="eyebrow">About me</p>
+      <h2 class="sec-title">Backend-first, full-stack by necessity</h2>
+      <p>I work mainly in Java and Spring Boot, with React for the front end. I like building the parts of an app people take for granted when they work: auth that holds up, data models that don't fall over under real use, APIs that are boring in the best way.</p>
+      <p>Most of the projects below started as a personal build to learn something specific — JWT security, multi-tenant data design, a scraping pipeline — and turned into a full working system by the time I was done.</p>
+      <div class="stat-row">
+        <div class="stat"><b>5</b><span>Projects shipped</span></div>
+        <div class="stat"><b>3</b><span>Full-stack systems</span></div>
+        <div class="stat"><b>2+</b><span>Years building</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <p class="eyebrow">Skills</p>
+    <h2 class="sec-title">Tools I build with</h2>
+    <p class="sec-desc">Self-rated proficiency based on hands-on project work, not certification scores.</p>
+    <div class="skills-grid">
+      <div class="skill"><div class="skill-top"><b>Java &amp; Spring Boot</b><span>90%</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+      <div class="skill"><div class="skill-top"><b>React</b><span>82%</span></div><div class="bar-track"><div class="bar-fill" style="width:82%"></div></div></div>
+      <div class="skill"><div class="skill-top"><b>PostgreSQL / SQL</b><span>80%</span></div><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div></div>
+      <div class="skill"><div class="skill-top"><b>Spring Security / JWT</b><span>85%</span></div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
+      <div class="skill"><div class="skill-top"><b>Node.js / Express</b><span>70%</span></div><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div></div>
+      <div class="skill"><div class="skill-top"><b>REST API Design</b><span>85%</span></div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
+    </div>
+
+    <div class="timeline" style="margin-top:64px;">
+      <div class="t-item">
+        <p class="t-year">2025</p>
+        <h3 class="t-title">Virelle &amp; Portly</h3>
+        <p class="t-desc">Built a JWT-secured e-commerce API and a multi-tenant SaaS client portal — the two most complete backend systems so far.</p>
+      </div>
+      <div class="t-item">
+        <p class="t-year">2025</p>
+        <h3 class="t-title">StoryFlow</h3>
+        <p class="t-desc">First multi-service project: Spring Boot backend, a Node.js scraper microservice, and a React frontend working together.</p>
+      </div>
+      <div class="t-item">
+        <p class="t-year">2024</p>
+        <h3 class="t-title">Storefront &amp; Expense Splitter</h3>
+        <p class="t-desc">Started with a React-only storefront, then moved into full-stack auth and API work with Spring Boot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="background:var(--bg-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <p class="eyebrow">Work</p>
+    <h2 class="sec-title">Projects I've built</h2>
+    <p class="sec-desc">Five systems, from a full order-and-inventory pipeline to a multi-source content aggregator.</p>
+
+    <div class="work-grid">
+      <article class="work-card">
+        <div class="work-visual"><i class="fa-solid fa-bag-shopping"></i></div>
+        <div class="work-body">
+          <div class="work-top"><h3 class="work-title">Virelle</h3><span class="work-status shipped">Shipped</span></div>
+          <p class="work-sub">Fashion e-commerce platform</p>
+          <p class="work-desc">JWT-secured Spring Boot API — catalog, cart, wishlist, orders with stock deduction, promo codes, verified-purchase reviews.</p>
+          <div class="work-tags"><span>Spring Boot</span><span>PostgreSQL</span><span>React</span></div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-visual"><i class="fa-solid fa-building"></i></div>
+        <div class="work-body">
+          <div class="work-top"><h3 class="work-title">Portly</h3><span class="work-status shipped">Shipped</span></div>
+          <p class="work-sub">Client portal for agencies</p>
+          <p class="work-desc">Multi-tenant SaaS tool — workspaces, client and project tracking, progress updates with file attachments.</p>
+          <div class="work-tags"><span>Spring Boot</span><span>React</span><span>Tailwind</span></div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-visual"><i class="fa-solid fa-book-open"></i></div>
+        <div class="work-body">
+          <div class="work-top"><h3 class="work-title">StoryFlow</h3><span class="work-status shipped">Shipped</span></div>
+          <p class="work-sub">Manga &amp; novel reading platform</p>
+          <p class="work-desc">Spring Boot backend + Node.js scraper aggregating 5 manga and 3 novel sources + React reader with audio player.</p>
+          <div class="work-tags"><span>Spring Boot</span><span>Node.js</span><span>React</span></div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-visual"><i class="fa-solid fa-receipt"></i></div>
+        <div class="work-body">
+          <div class="work-top"><h3 class="work-title">Expense Splitter</h3><span class="work-status progress">In progress</span></div>
+          <p class="work-sub">Group expense-splitting app</p>
+          <p class="work-desc">Spring Boot and React app for splitting shared costs. Auth and dashboard live; group features underway.</p>
+          <div class="work-tags"><span>Spring Boot</span><span>React</span><span>Vite</span></div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-visual"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="work-body">
+          <div class="work-top"><h3 class="work-title">Storefront</h3><span class="work-status shipped">Shipped</span></div>
+          <p class="work-sub">React e-commerce front end</p>
+          <p class="work-desc">Full shopper journey — shop, product detail, cart, checkout, order confirmation — plus admin product management.</p>
+          <div class="work-tags"><span>React 19</span><span>React Router</span><span>Vite</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2 class="sec-title">Let's build something</h2>
+      <p class="sec-desc" style="margin-bottom:30px;">Open to full-stack or backend-focused roles and freelance builds.</p>
+
+      <div class="contact-info-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div><b>Email</b><a href="mailto:basitjatoi17@gmail.com">basitjatoi17@gmail.com</a></div>
+      </div>
+      <div class="contact-info-item">
+        <i class="fa-brands fa-github"></i>
+        <div><b>GitHub</b><a href="https://github.com/AbdulBasit-j" target="_blank" rel="noopener">github.com/AbdulBasit-j</a></div>
+      </div>
+      <div class="contact-info-item">
+        <i class="fa-solid fa-circle-check"></i>
+        <div><b>Status</b><span>Open to work</span></div>
+      </div>
+    </div>
+
+    <form action="mailto:basitjatoi17@gmail.com" method="post" enctype="text/plain">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+      </div>
+      <input type="text" name="subject" placeholder="Subject">
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <p class="form-note">Opens your email client with this message pre-filled — no backend attached yet.</p>
+      <button class="btn btn-grad" type="submit" style="align-self:flex-start; border:none; cursor:pointer;">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Abdul Basit — Full-Stack Developer. Built with Java, Spring Boot &amp; React.</p>
+</footer>
+
+<script>
+  const roles = ["Full-Stack Developer", "Java & Spring Boot Engineer", "React Developer"];
+  const roleEl = document.getElementById('roleText');
+  const cursor = '<span class="cursor">&nbsp;</span>';
+  let ri = 0, ci = 0, deleting = false;
+
+  function tick(){
+    const current = roles[ri];
+    if(!deleting){
+      ci++;
+      if(ci > current.length){ deleting = true; setTimeout(tick, 1200); return; }
+    } else {
+      ci--;
+      if(ci < 0){ deleting = false; ri = (ri+1) % roles.length; ci = 0; }
+    }
+    roleEl.innerHTML = current.slice(0, ci) + cursor;
+    setTimeout(tick, deleting ? 40 : 80);
+  }
+  if(roleEl){ setTimeout(tick, 600); }
+</script>
+
+</body>
+</html>
