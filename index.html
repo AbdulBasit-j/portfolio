@@ -3,459 +3,625 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdul Basit — Full-Stack Developer | Java, Spring Boot &amp; React</title>
-<meta name="description" content="Abdul Basit is a full-stack developer building production-grade web systems with Java, Spring Boot, PostgreSQL and React — e-commerce platforms, SaaS client portals and content platforms.">
-<meta name="keywords" content="Abdul Basit, full-stack developer, Java developer, Spring Boot developer, React developer, backend engineer, portfolio">
-<meta name="author" content="Abdul Basit">
-<link rel="canonical" href="https://abdulbasit-j.github.io/portfolio/">
+<title>Abdul Basit — Full-Stack Java &amp; Spring Boot Developer</title>
+<meta name="description" content="Abdul Basit is a full-stack developer specializing in Java, Spring Boot, and React. Explore 9 shipped projects spanning e-commerce, education platforms, and SaaS tools.">
+<meta name="google-site-verification" content="REPLACE_WITH_YOUR_VERIFICATION_CODE">
 
+<meta property="og:title" content="Abdul Basit — Full-Stack Java & Spring Boot Developer">
+<meta property="og:description" content="9 full-stack projects: e-commerce platforms, learning management systems, SaaS tools, and auth/RBAC services built with Java, Spring Boot, React, and Angular.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Abdul Basit — Full-Stack Developer">
-<meta property="og:description" content="Full-stack developer building production-grade web systems with Java, Spring Boot, PostgreSQL and React.">
 <meta property="og:url" content="https://abdulbasit-j.github.io/portfolio/">
-<meta property="og:site_name" content="Abdul Basit — Portfolio">
-<meta property="og:image" content="https://abdulbasit-j.github.io/portfolio/og-image.png">
-<meta property="og:locale" content="en_US">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Abdul Basit — Full-Stack Developer">
-<meta name="twitter:description" content="Full-stack developer building production-grade web systems with Java, Spring Boot, PostgreSQL and React.">
-<meta name="twitter:image" content="https://abdulbasit-j.github.io/portfolio/og-image.png">
-
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0E0F1A">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Abdul Basit",
-  "jobTitle": "Full-Stack Developer",
-  "email": "mailto:basitjatoi17@gmail.com",
-  "url": "https://abdulbasit-j.github.io/portfolio/",
-  "sameAs": ["https://github.com/AbdulBasit-j"],
-  "knowsAbout": ["Java", "Spring Boot", "React", "PostgreSQL", "Spring Security", "REST APIs", "Node.js"],
-  "worksFor": { "@type": "Organization", "name": "Independent" }
-}
-</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
   :root{
-    --bg:#0E0F1A;
-    --bg-2:#151726;
-    --card:#1A1D2E;
-    --line:#2A2D42;
-    --text:#C7CAD9;
-    --text-dim:#8A8DA3;
-    --heading:#F5F6FA;
-    --violet:#7C5CFC;
-    --cyan:#3FD0C9;
-    --grad:linear-gradient(135deg,#7C5CFC,#3FD0C9);
-
-    --f-display:'Poppins', sans-serif;
-    --f-body:'Inter', sans-serif;
+    --ink:#0B1220;
+    --panel:#111A2D;
+    --panel-2:#16213A;
+    --line:#25324D;
+    --paper:#E9E7DD;
+    --paper-dim:#A9AEBD;
+    --brass:#C9A227;
+    --brass-dim:#8A701E;
+    --signal:#4FD1C5;
+    --danger:#E2725B;
+    --radius:10px;
+    --mono:'IBM Plex Mono', ui-monospace, monospace;
+    --sans:'Inter', system-ui, sans-serif;
   }
-  *{box-sizing:border-box;}
+
+  *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
   body{
-    margin:0; background:var(--bg); color:var(--text);
-    font-family:var(--f-body); font-size:16px; line-height:1.7;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:var(--sans);
+    line-height:1.55;
     -webkit-font-smoothing:antialiased;
   }
+  ::selection{background:var(--brass); color:var(--ink);}
+
   a{color:inherit; text-decoration:none;}
-  a:focus-visible, button:focus-visible{outline:2px solid var(--cyan); outline-offset:3px;}
   img{max-width:100%; display:block;}
-  .wrap{max-width:1140px; margin:0 auto; padding:0 28px;}
-  section{padding:96px 0;}
-  h1,h2,h3{font-family:var(--f-display); color:var(--heading); margin:0;}
 
-  .eyebrow{
-    font-family:var(--f-body); font-weight:600; font-size:13px; letter-spacing:0.12em;
-    text-transform:uppercase; color:var(--cyan); margin:0 0 12px;
+  .wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--brass);
+    outline-offset:3px;
   }
-  .sec-title{font-size:clamp(26px,3vw,34px); font-weight:700; margin-bottom:14px;}
-  .sec-desc{color:var(--text-dim); max-width:56ch; margin:0 0 48px; font-size:15.5px;}
 
-  /* ---------- Navbar ---------- */
-  .navbar{
-    position:sticky; top:0; z-index:100;
-    background:rgba(14,15,26,0.85); backdrop-filter:blur(10px);
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- NAV ---------- */
+  header.site{
+    position:sticky; top:0; z-index:50;
+    background:rgba(11,18,32,0.86);
+    backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);
   }
-  .nav-inner{
-    max-width:1140px; margin:0 auto; padding:18px 28px;
+  .nav{
     display:flex; align-items:center; justify-content:space-between;
+    padding:18px 0;
   }
-  .logo{font-family:var(--f-display); font-weight:800; font-size:20px; color:var(--heading);}
-  .logo span{background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;}
-  .nav-links{display:flex; align-items:center; gap:32px; list-style:none; margin:0; padding:0;}
-  .nav-links a{font-size:14.5px; font-weight:500; color:var(--text);}
-  .nav-links a:hover{color:var(--heading);}
+  .logo{
+    font-family:var(--mono); font-weight:600; font-size:15px;
+    display:flex; align-items:center; gap:8px; color:var(--paper);
+  }
+  .logo .dot{width:8px; height:8px; border-radius:50%; background:var(--signal); box-shadow:0 0 8px var(--signal);}
+  nav.links{display:flex; gap:28px; font-family:var(--mono); font-size:13px;}
+  nav.links a{color:var(--paper-dim); transition:color .2s;}
+  nav.links a:hover{color:var(--brass);}
   .nav-cta{
-    font-size:14px; font-weight:600; padding:10px 20px; border-radius:8px;
-    background:var(--grad); color:#0E0F1A;
+    font-family:var(--mono); font-size:13px; padding:9px 16px;
+    border:1px solid var(--brass-dim); border-radius:6px; color:var(--brass);
+    transition:all .2s;
   }
+  .nav-cta:hover{background:var(--brass); color:var(--ink); border-color:var(--brass);}
+  .nav-toggle{display:none;}
 
-  /* ---------- Hero ---------- */
-  .hero{padding:110px 0 90px;}
-  .hero-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:50px; align-items:center;}
-  .hero-hi{
-    display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600;
-    color:var(--cyan); margin-bottom:18px;
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:88px 0 70px;
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;
   }
-  .hero h1{font-size:clamp(36px,5vw,54px); line-height:1.12; margin-bottom:10px;}
-  .hero h1 .grad-text{background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;}
-  .role-line{
-    font-family:var(--f-display); font-weight:600; font-size:20px; color:var(--text);
-    margin-bottom:20px; min-height:28px;
+  .eyebrow{
+    font-family:var(--mono); font-size:12.5px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--signal); display:flex; align-items:center; gap:10px; margin-bottom:20px;
   }
-  .role-line .cursor{display:inline-block; width:2px; background:var(--cyan); margin-left:2px; animation:blink 1s step-end infinite;}
+  .eyebrow::before{content:''; width:22px; height:1px; background:var(--signal);}
+  h1.hero-title{
+    font-family:var(--sans); font-weight:800; font-size:clamp(34px, 4.6vw, 54px);
+    line-height:1.08; letter-spacing:-0.02em; color:var(--paper); margin-bottom:22px;
+  }
+  h1.hero-title em{
+    font-style:normal; color:var(--brass);
+    text-decoration:underline; text-decoration-color:var(--brass-dim); text-decoration-thickness:3px; text-underline-offset:6px;
+  }
+  .hero-sub{
+    font-size:17px; color:var(--paper-dim); max-width:52ch; margin-bottom:32px;
+  }
+  .hero-actions{display:flex; gap:14px; flex-wrap:wrap;}
+  .btn-primary{
+    font-family:var(--mono); font-size:14px; font-weight:600; padding:13px 22px;
+    background:var(--brass); color:var(--ink); border-radius:6px; transition:transform .15s, box-shadow .15s;
+  }
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 8px 20px rgba(201,162,39,0.25);}
+  .btn-ghost{
+    font-family:var(--mono); font-size:14px; padding:13px 22px;
+    border:1px solid var(--line); border-radius:6px; color:var(--paper); transition:border-color .2s, color .2s;
+  }
+  .btn-ghost:hover{border-color:var(--paper-dim); color:var(--brass);}
+
+  /* Terminal signature element */
+  .terminal{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,0.35);
+  }
+  .terminal-bar{
+    display:flex; align-items:center; gap:8px; padding:12px 14px;
+    background:var(--panel-2); border-bottom:1px solid var(--line);
+  }
+  .terminal-bar span{width:10px; height:10px; border-radius:50%; display:inline-block;}
+  .terminal-bar .r{background:#E2725B;} .terminal-bar .y{background:#E5B94E;} .terminal-bar .g{background:#4FD1C5;}
+  .terminal-bar .path{
+    margin-left:10px; font-family:var(--mono); font-size:12px; color:var(--paper-dim);
+  }
+  .terminal-body{
+    padding:20px 18px; font-family:var(--mono); font-size:13.5px; min-height:230px;
+  }
+  .terminal-body .line{margin-bottom:9px; white-space:pre-wrap; word-break:break-word;}
+  .terminal-body .prompt{color:var(--signal);}
+  .terminal-body .req{color:var(--paper);}
+  .terminal-body .ok{color:#8CD9A0;}
+  .terminal-body .info{color:var(--paper-dim);}
+  .cursor{display:inline-block; width:7px; height:14px; background:var(--brass); vertical-align:middle; animation:blink 1s step-end infinite;}
   @keyframes blink{50%{opacity:0;}}
-  .hero p.desc{color:var(--text-dim); max-width:50ch; margin:0 0 34px; font-size:16px;}
-  .hero-cta{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:34px;}
-  .btn{
-    font-family:var(--f-body); font-weight:600; font-size:14.5px;
-    padding:14px 26px; border-radius:8px; display:inline-flex; align-items:center; gap:8px;
-    transition:transform .15s ease, box-shadow .15s ease;
-  }
-  .btn-grad{background:var(--grad); color:#0E0F1A;}
-  .btn-grad:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(124,92,252,0.35);}
-  .btn-outline{border:1px solid var(--line); color:var(--text);}
-  .btn-outline:hover{border-color:var(--cyan); color:var(--heading);}
-  .hero-socials{display:flex; gap:14px;}
-  .hero-socials a{
-    width:40px; height:40px; border:1px solid var(--line); border-radius:50%;
-    display:flex; align-items:center; justify-content:center; color:var(--text);
-  }
-  .hero-socials a:hover{border-color:var(--cyan); color:var(--cyan);}
 
-  .avatar-wrap{position:relative; display:flex; justify-content:center;}
-  .avatar-blob{
-    width:320px; height:320px; border-radius:42% 58% 65% 35% / 45% 40% 60% 55%;
-    background:var(--grad); display:flex; align-items:center; justify-content:center;
-    position:relative;
+  /* ---------- SECTIONS shared ---------- */
+  section{padding:86px 0;}
+  .section-head{margin-bottom:44px; max-width:640px;}
+  .kicker{
+    font-family:var(--mono); font-size:12.5px; color:var(--brass); text-transform:uppercase; letter-spacing:.08em; margin-bottom:12px;
   }
-  .avatar-inner{
-    width:270px; height:270px; border-radius:50%; background:var(--bg-2);
-    display:flex; align-items:center; justify-content:center;
-    font-family:var(--f-display); font-weight:800; font-size:72px; color:var(--heading);
-    border:1px solid var(--line);
+  h2.section-title{
+    font-family:var(--sans); font-weight:800; font-size:clamp(26px,3vw,36px); letter-spacing:-0.01em; color:var(--paper);
   }
-  .badge{
-    position:absolute; bottom:10px; right:0; background:var(--card);
-    border:1px solid var(--line); border-radius:12px; padding:10px 16px;
-    font-size:12.5px; font-weight:600; color:var(--heading);
-    display:flex; align-items:center; gap:8px;
-  }
-  .badge .dot{width:8px; height:8px; border-radius:50%; background:var(--cyan);}
+  .section-desc{color:var(--paper-dim); margin-top:14px; font-size:15.5px;}
 
-  /* ---------- About ---------- */
-  .about{background:var(--bg-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
-  .about-grid{display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:center;}
-  .about-visual{
-    aspect-ratio:1; border-radius:20px; background:var(--card); border:1px solid var(--line);
-    display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;
+  /* ---------- STACK STRIP ---------- */
+  .stack-strip{
+    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:22px 0; overflow:hidden;
   }
-  .about-visual i{font-size:80px; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;}
-  .about-text p{color:var(--text); margin:0 0 16px; font-size:15.5px; max-width:56ch;}
-  .stat-row{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:30px;}
-  .stat{border:1px solid var(--line); border-radius:12px; padding:18px 16px; background:var(--card);}
-  .stat b{display:block; font-family:var(--f-display); font-size:24px; color:var(--heading);}
-  .stat span{font-size:12.5px; color:var(--text-dim);}
-
-  /* ---------- Skills ---------- */
-  .skills-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px 40px;}
-  .skill{margin-bottom:4px;}
-  .skill-top{display:flex; justify-content:space-between; font-size:14px; margin-bottom:8px;}
-  .skill-top b{color:var(--heading); font-weight:600;}
-  .skill-top span{color:var(--text-dim); font-family:var(--f-display);}
-  .bar-track{height:8px; background:var(--line); border-radius:6px; overflow:hidden;}
-  .bar-fill{height:100%; border-radius:6px; background:var(--grad);}
-  .skills-note{font-size:12.5px; color:var(--text-dim); margin-top:36px;}
-
-  /* ---------- Timeline ---------- */
-  .timeline{position:relative; padding-left:32px; border-left:2px solid var(--line);}
-  .t-item{position:relative; padding-bottom:40px;}
-  .t-item:last-child{padding-bottom:0;}
-  .t-item::before{
-    content:""; position:absolute; left:-38px; top:2px; width:14px; height:14px;
-    border-radius:50%; background:var(--grad); border:3px solid var(--bg);
+  .stack-track{
+    display:flex; gap:46px; font-family:var(--mono); font-size:13px; color:var(--paper-dim);
+    white-space:nowrap; animation:scroll 28s linear infinite;
   }
-  .t-year{font-family:var(--f-display); font-size:12.5px; color:var(--cyan); font-weight:600; margin-bottom:6px;}
-  .t-title{font-size:17px; font-weight:600; color:var(--heading); margin:0 0 6px;}
-  .t-desc{font-size:14.5px; color:var(--text-dim); margin:0; max-width:56ch;}
-
-  /* ---------- Work grid ---------- */
-  .work-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
-  .work-card{
-    border:1px solid var(--line); border-radius:16px; background:var(--card);
-    overflow:hidden; transition:transform .18s ease, border-color .18s ease;
+  .stack-strip:hover .stack-track{animation-play-state:paused;}
+  .stack-track span{display:inline-flex; align-items:center; gap:10px;}
+  .stack-track span::before{content:'▹'; color:var(--brass);}
+  @keyframes scroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
   }
-  .work-card:hover{transform:translateY(-4px); border-color:var(--cyan);}
-  .work-visual{
-    height:150px; background:var(--grad); display:flex; align-items:center; justify-content:center;
-    opacity:0.9;
+
+  /* ---------- PROJECTS ---------- */
+  .filters{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:34px;}
+  .filter-btn{
+    font-family:var(--mono); font-size:12.5px; padding:8px 14px; border-radius:20px;
+    border:1px solid var(--line); color:var(--paper-dim); transition:all .2s; cursor:pointer; background:transparent;
   }
-  .work-visual i{font-size:44px; color:rgba(14,15,26,0.55);}
-  .work-body{padding:22px 22px 24px;}
-  .work-top{display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; gap:10px;}
-  .work-title{font-size:18px; font-weight:600; color:var(--heading);}
-  .work-status{font-size:10.5px; font-weight:600; text-transform:uppercase; padding:3px 9px; border-radius:20px; letter-spacing:0.04em;}
-  .work-status.shipped{background:rgba(63,208,201,0.14); color:var(--cyan);}
-  .work-status.progress{background:rgba(124,92,252,0.16); color:var(--violet);}
-  .work-sub{font-size:12.5px; color:var(--text-dim); margin:0 0 12px;}
-  .work-desc{font-size:14px; color:var(--text); margin:0 0 16px;}
-  .work-tags{display:flex; flex-wrap:wrap; gap:7px;}
-  .work-tags span{font-size:11px; color:var(--text-dim); border:1px solid var(--line); border-radius:20px; padding:4px 10px;}
+  .filter-btn:hover{color:var(--paper);}
+  .filter-btn.active{background:var(--brass); border-color:var(--brass); color:var(--ink); font-weight:600;}
 
-  /* ---------- Contact ---------- */
-  .contact{background:var(--bg-2); border-top:1px solid var(--line);}
-  .contact-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px;}
-  .contact-info-item{display:flex; gap:14px; align-items:flex-start; margin-bottom:26px;}
-  .contact-info-item i{
-    width:42px; height:42px; border-radius:10px; background:var(--card); border:1px solid var(--line);
-    display:flex; align-items:center; justify-content:center; color:var(--cyan); flex-shrink:0;
+  .project-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:22px;
   }
-  .contact-info-item b{display:block; color:var(--heading); font-size:14.5px; margin-bottom:2px;}
-  .contact-info-item span, .contact-info-item a{font-size:14px; color:var(--text-dim);}
-  .contact-info-item a:hover{color:var(--cyan);}
-
-  form{display:flex; flex-direction:column; gap:16px;}
-  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
-  input, textarea{
-    width:100%; background:var(--card); border:1px solid var(--line); border-radius:10px;
-    padding:14px 16px; color:var(--heading); font-family:var(--f-body); font-size:14.5px;
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:26px 24px; display:flex; flex-direction:column; transition:transform .2s, border-color .2s, box-shadow .2s;
   }
-  input::placeholder, textarea::placeholder{color:var(--text-dim);}
-  input:focus, textarea:focus{outline:none; border-color:var(--cyan);}
-  textarea{resize:vertical; min-height:130px;}
-  .form-note{font-size:12px; color:var(--text-dim); margin-top:-6px;}
+  .card:hover{transform:translateY(-4px); border-color:var(--brass-dim); box-shadow:0 16px 34px rgba(0,0,0,0.3);}
+  .card-top{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:14px;}
+  .card-cat{font-family:var(--mono); font-size:11px; color:var(--signal); text-transform:uppercase; letter-spacing:.06em;}
+  .card-stack-badge{font-family:var(--mono); font-size:10.5px; color:var(--paper-dim); border:1px solid var(--line); padding:3px 8px; border-radius:20px;}
+  h3.card-title{font-size:19px; font-weight:700; color:var(--paper); margin-bottom:10px; font-family:var(--sans);}
+  .card-desc{color:var(--paper-dim); font-size:14px; margin-bottom:18px; flex-grow:1;}
+  .card-features{list-style:none; margin-bottom:18px;}
+  .card-features li{
+    font-size:13px; color:var(--paper-dim); padding-left:16px; position:relative; margin-bottom:6px;
+  }
+  .card-features li::before{content:'—'; position:absolute; left:0; color:var(--brass-dim);}
+  .tags{display:flex; flex-wrap:wrap; gap:7px; margin-top:auto;}
+  .tag{
+    font-family:var(--mono); font-size:11px; padding:4px 9px; background:var(--panel-2);
+    border:1px solid var(--line); border-radius:5px; color:var(--paper-dim);
+  }
 
-  footer{padding:36px 0; border-top:1px solid var(--line); text-align:center;}
-  footer p{font-size:13px; color:var(--text-dim); margin:0;}
+  /* ---------- SKILLS as config files ---------- */
+  .config-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  .config-file{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
+  }
+  .config-head{
+    padding:12px 16px; background:var(--panel-2); border-bottom:1px solid var(--line);
+    font-family:var(--mono); font-size:12.5px; color:var(--paper-dim); display:flex; align-items:center; gap:8px;
+  }
+  .config-head .fdot{width:7px; height:7px; border-radius:50%; background:var(--brass);}
+  .config-body{padding:20px 18px; font-family:var(--mono); font-size:13px; color:var(--paper-dim); overflow-x:auto;}
+  .config-body .tagname{color:var(--signal);}
+  .config-body .valname{color:var(--brass);}
+  .config-body .str{color:#8CD9A0;}
+  .config-body .com{color:#5B6478;}
 
-  @media (max-width:860px){
-    .hero-grid, .about-grid, .contact-grid{grid-template-columns:1fr;}
-    .avatar-wrap{order:-1;}
-    .skills-grid, .work-grid, .form-row, .stat-row{grid-template-columns:1fr;}
-    .nav-links{display:none;}
-    section{padding:64px 0;}
+  /* ---------- ABOUT / APPROACH ---------- */
+  .approach-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .approach-card{
+    border:1px solid var(--line); border-radius:var(--radius); padding:24px; background:var(--panel);
+  }
+  .approach-card .num{font-family:var(--mono); color:var(--brass-dim); font-size:12px; margin-bottom:10px;}
+  .approach-card h4{font-size:16px; margin-bottom:8px; font-family:var(--sans);}
+  .approach-card p{font-size:13.5px; color:var(--paper-dim);}
+
+  /* ---------- CONTACT ---------- */
+  .contact-panel{
+    border:1px solid var(--line); border-radius:14px; padding:56px 48px;
+    background:linear-gradient(180deg, var(--panel), var(--panel-2));
+    display:flex; justify-content:space-between; align-items:center; gap:32px; flex-wrap:wrap;
+  }
+  .contact-panel h2{font-size:clamp(24px,3vw,32px); font-weight:800; max-width:460px;}
+  .contact-panel .em{color:var(--brass);}
+  .contact-links{display:flex; gap:14px; flex-wrap:wrap;}
+
+  footer.site{
+    border-top:1px solid var(--line); padding:30px 0; font-family:var(--mono); font-size:12.5px; color:var(--paper-dim);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 920px){
+    .hero{grid-template-columns:1fr; padding-top:60px;}
+    .project-grid{grid-template-columns:repeat(2,1fr);}
+    .config-grid{grid-template-columns:1fr;}
+    .approach-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width: 640px){
+    nav.links{display:none;}
+    .project-grid{grid-template-columns:1fr;}
+    .contact-panel{padding:36px 26px; flex-direction:column; align-items:flex-start;}
+    .hero{padding:44px 0 40px;}
+    section{padding:60px 0;}
   }
 </style>
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="nav-inner">
-    <a href="#top" class="logo">Abdul<span>.</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a class="nav-cta" href="mailto:basitjatoi17@gmail.com">Hire Me</a>
-  </div>
-</nav>
-
-<header class="hero" id="top">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="hero-hi"><i class="fa-solid fa-hand-sparkles"></i> Hi, I'm</p>
-      <h1>Abdul <span class="grad-text">Basit</span></h1>
-      <p class="role-line" id="roleText">Full-Stack Developer<span class="cursor">&nbsp;</span></p>
-      <p class="desc">I build complete web systems — data model, API, and interface. Java and Spring Boot on the backend, React on the front. Five shipped systems below, from an e-commerce order pipeline to a multi-source content platform.</p>
-      <div class="hero-cta">
-        <a class="btn btn-grad" href="#work">View My Work <i class="fa-solid fa-arrow-right"></i></a>
-        <a class="btn btn-outline" href="#contact">Contact Me</a>
-      </div>
-      <div class="hero-socials">
-        <a href="mailto:basitjatoi17@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://github.com/AbdulBasit-j" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </div>
-    <div class="avatar-wrap">
-      <div class="avatar-blob">
-        <div class="avatar-inner">AB</div>
-        <div class="badge"><span class="dot"></span> Open to work</div>
-      </div>
-    </div>
+<header class="site">
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="dot"></span>abdulbasit.dev</a>
+    <nav class="links">
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Get in touch</a>
   </div>
 </header>
 
-<section class="about" id="about">
-  <div class="wrap about-grid">
-    <div class="about-visual"><i class="fa-solid fa-code"></i></div>
-    <div class="about-text">
-      <p class="eyebrow">About me</p>
-      <h2 class="sec-title">Backend-first, full-stack by necessity</h2>
-      <p>I work mainly in Java and Spring Boot, with React for the front end. I like building the parts of an app people take for granted when they work: auth that holds up, data models that don't fall over under real use, APIs that are boring in the best way.</p>
-      <p>Most of the projects below started as a personal build to learn something specific — JWT security, multi-tenant data design, a scraping pipeline — and turned into a full working system by the time I was done.</p>
-      <div class="stat-row">
-        <div class="stat"><b>5</b><span>Projects shipped</span></div>
-        <div class="stat"><b>3</b><span>Full-stack systems</span></div>
-        <div class="stat"><b>2+</b><span>Years building</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+<main id="top">
 
-<section id="skills">
-  <div class="wrap">
-    <p class="eyebrow">Skills</p>
-    <h2 class="sec-title">Tools I build with</h2>
-    <p class="sec-desc">Self-rated proficiency based on hands-on project work, not certification scores.</p>
-    <div class="skills-grid">
-      <div class="skill"><div class="skill-top"><b>Java &amp; Spring Boot</b><span>90%</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
-      <div class="skill"><div class="skill-top"><b>React</b><span>82%</span></div><div class="bar-track"><div class="bar-fill" style="width:82%"></div></div></div>
-      <div class="skill"><div class="skill-top"><b>PostgreSQL / SQL</b><span>80%</span></div><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div></div>
-      <div class="skill"><div class="skill-top"><b>Spring Security / JWT</b><span>85%</span></div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
-      <div class="skill"><div class="skill-top"><b>Node.js / Express</b><span>70%</span></div><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div></div>
-      <div class="skill"><div class="skill-top"><b>REST API Design</b><span>85%</span></div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
-    </div>
-
-    <div class="timeline" style="margin-top:64px;">
-      <div class="t-item">
-        <p class="t-year">2025</p>
-        <h3 class="t-title">Virelle &amp; Portly</h3>
-        <p class="t-desc">Built a JWT-secured e-commerce API and a multi-tenant SaaS client portal — the two most complete backend systems so far.</p>
-      </div>
-      <div class="t-item">
-        <p class="t-year">2025</p>
-        <h3 class="t-title">StoryFlow</h3>
-        <p class="t-desc">First multi-service project: Spring Boot backend, a Node.js scraper microservice, and a React frontend working together.</p>
-      </div>
-      <div class="t-item">
-        <p class="t-year">2024</p>
-        <h3 class="t-title">Storefront &amp; Expense Splitter</h3>
-        <p class="t-desc">Started with a React-only storefront, then moved into full-stack auth and API work with Spring Boot.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="work" style="background:var(--bg-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
-  <div class="wrap">
-    <p class="eyebrow">Work</p>
-    <h2 class="sec-title">Projects I've built</h2>
-    <p class="sec-desc">Five systems, from a full order-and-inventory pipeline to a multi-source content aggregator.</p>
-
-    <div class="work-grid">
-      <article class="work-card">
-        <div class="work-visual"><i class="fa-solid fa-bag-shopping"></i></div>
-        <div class="work-body">
-          <div class="work-top"><h3 class="work-title">Virelle</h3><span class="work-status shipped">Shipped</span></div>
-          <p class="work-sub">Fashion e-commerce platform</p>
-          <p class="work-desc">JWT-secured Spring Boot API — catalog, cart, wishlist, orders with stock deduction, promo codes, verified-purchase reviews.</p>
-          <div class="work-tags"><span>Spring Boot</span><span>PostgreSQL</span><span>React</span></div>
-        </div>
-      </article>
-
-      <article class="work-card">
-        <div class="work-visual"><i class="fa-solid fa-building"></i></div>
-        <div class="work-body">
-          <div class="work-top"><h3 class="work-title">Portly</h3><span class="work-status shipped">Shipped</span></div>
-          <p class="work-sub">Client portal for agencies</p>
-          <p class="work-desc">Multi-tenant SaaS tool — workspaces, client and project tracking, progress updates with file attachments.</p>
-          <div class="work-tags"><span>Spring Boot</span><span>React</span><span>Tailwind</span></div>
-        </div>
-      </article>
-
-      <article class="work-card">
-        <div class="work-visual"><i class="fa-solid fa-book-open"></i></div>
-        <div class="work-body">
-          <div class="work-top"><h3 class="work-title">StoryFlow</h3><span class="work-status shipped">Shipped</span></div>
-          <p class="work-sub">Manga &amp; novel reading platform</p>
-          <p class="work-desc">Spring Boot backend + Node.js scraper aggregating 5 manga and 3 novel sources + React reader with audio player.</p>
-          <div class="work-tags"><span>Spring Boot</span><span>Node.js</span><span>React</span></div>
-        </div>
-      </article>
-
-      <article class="work-card">
-        <div class="work-visual"><i class="fa-solid fa-receipt"></i></div>
-        <div class="work-body">
-          <div class="work-top"><h3 class="work-title">Expense Splitter</h3><span class="work-status progress">In progress</span></div>
-          <p class="work-sub">Group expense-splitting app</p>
-          <p class="work-desc">Spring Boot and React app for splitting shared costs. Auth and dashboard live; group features underway.</p>
-          <div class="work-tags"><span>Spring Boot</span><span>React</span><span>Vite</span></div>
-        </div>
-      </article>
-
-      <article class="work-card">
-        <div class="work-visual"><i class="fa-solid fa-cart-shopping"></i></div>
-        <div class="work-body">
-          <div class="work-top"><h3 class="work-title">Storefront</h3><span class="work-status shipped">Shipped</span></div>
-          <p class="work-sub">React e-commerce front end</p>
-          <p class="work-desc">Full shopper journey — shop, product detail, cart, checkout, order confirmation — plus admin product management.</p>
-          <div class="work-tags"><span>React 19</span><span>React Router</span><span>Vite</span></div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="wrap contact-grid">
+  <!-- HERO -->
+  <section class="hero wrap">
     <div>
-      <p class="eyebrow">Contact</p>
-      <h2 class="sec-title">Let's build something</h2>
-      <p class="sec-desc" style="margin-bottom:30px;">Open to full-stack or backend-focused roles and freelance builds.</p>
-
-      <div class="contact-info-item">
-        <i class="fa-solid fa-envelope"></i>
-        <div><b>Email</b><a href="mailto:basitjatoi17@gmail.com">basitjatoi17@gmail.com</a></div>
-      </div>
-      <div class="contact-info-item">
-        <i class="fa-brands fa-github"></i>
-        <div><b>GitHub</b><a href="https://github.com/AbdulBasit-j" target="_blank" rel="noopener">github.com/AbdulBasit-j</a></div>
-      </div>
-      <div class="contact-info-item">
-        <i class="fa-solid fa-circle-check"></i>
-        <div><b>Status</b><span>Open to work</span></div>
+      <div class="eyebrow">Full-stack developer · Java / Spring Boot / React</div>
+      <h1 class="hero-title">I build the backend logic and the <em>screens</em> that sit on top of it.</h1>
+      <p class="hero-sub">
+        I'm Abdul Basit, a full-stack developer. I design REST APIs in Spring Boot — authentication,
+        database schema, business logic — then build the React or Angular interface that consumes them.
+        This portfolio presents nine completed projects, ranging from e-commerce platforms to a
+        role-based university management system.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">View the projects</a>
+        <a href="mailto:basitjatoi17@gmail.com" class="btn-ghost">basitjatoi17@gmail.com</a>
       </div>
     </div>
 
-    <form action="mailto:basitjatoi17@gmail.com" method="post" enctype="text/plain">
-      <div class="form-row">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
+    <div class="terminal" aria-hidden="false" role="img" aria-label="Animated terminal showing example API requests from Abdul's projects">
+      <div class="terminal-bar">
+        <span class="r"></span><span class="y"></span><span class="g"></span>
+        <span class="path">~/portfolio — requests</span>
       </div>
-      <input type="text" name="subject" placeholder="Subject">
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <p class="form-note">Opens your email client with this message pre-filled — no backend attached yet.</p>
-      <button class="btn btn-grad" type="submit" style="align-self:flex-start; border:none; cursor:pointer;">Send Message <i class="fa-solid fa-paper-plane"></i></button>
-    </form>
-  </div>
-</section>
+      <div class="terminal-body" id="termBody"></div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2026 Abdul Basit — Full-Stack Developer. Built with Java, Spring Boot &amp; React.</p>
+  <!-- STACK STRIP -->
+  <div class="stack-strip">
+    <div class="wrap">
+      <div class="stack-track" id="stackTrack"></div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Selected work</div>
+        <h2 class="section-title">Nine projects, four problem spaces</h2>
+        <p class="section-desc">Each one pairs a Spring Boot or Java backend with a hand-built frontend — most with JWT auth, a real database schema, and an admin or role layer.</p>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+        <button class="filter-btn" data-filter="education">Education</button>
+        <button class="filter-btn" data-filter="saas">SaaS &amp; Productivity</button>
+        <button class="filter-btn" data-filter="platform">Platform &amp; Auth</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="card" data-cat="ecommerce">
+          <div class="card-top"><span class="card-cat">E-commerce</span><span class="card-stack-badge">Full-stack</span></div>
+          <h3 class="card-title">VelourStyle</h3>
+          <p class="card-desc">A fashion storefront with a proper product catalog: variant-level stock (size × color), filtered search, and a review system that verifies purchases before letting someone rate a product.</p>
+          <ul class="card-features">
+            <li>JWT auth with a seeded admin account and Flyway-versioned schema</li>
+            <li>Cart, wishlist, addresses, and order placement with stock deduction</li>
+            <li>Promo code engine and category-based product filtering</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Java 21</span><span class="tag">Spring Boot 3.3</span><span class="tag">PostgreSQL</span><span class="tag">Flyway</span><span class="tag">React</span>
+          </div>
+        </article>
+
+        <article class="card" data-cat="saas">
+          <div class="card-top"><span class="card-cat">SaaS</span><span class="card-stack-badge">Full-stack</span></div>
+          <h3 class="card-title">Portly</h3>
+          <p class="card-desc">A client portal built for agencies: create a workspace, add clients, track project status, and post progress updates with file attachments — designed for direct client-facing use, not just internal tracking.</p>
+          <ul class="card-features">
+            <li>Workspace → Client → Project hierarchy with inline status changes</li>
+            <li>File-attached progress updates, team invites by email</li>
+            <li>JWT authentication over a Spring Security + JPA backend</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Java 21</span><span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">Tailwind</span>
+          </div>
+        </article>
+
+        <article class="card" data-cat="education">
+          <div class="card-top"><span class="card-cat">Education</span><span class="card-stack-badge">Full-stack</span></div>
+          <h3 class="card-title">UNI — University Management</h3>
+          <p class="card-desc">The largest project here: a role-based system for a university, with a super-admin who manages roles/permissions, an admin dashboard, and a multi-step onboarding flow that branches for students vs. teachers.</p>
+          <ul class="card-features">
+            <li>Custom RBAC — roles and granular permissions, not just "admin/user"</li>
+            <li>Google OAuth sign-in alongside standard auth</li>
+            <li>Course category management and a Spring Boot microservice backend</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Spring Boot</span><span class="tag">Supabase</span><span class="tag">OAuth</span>
+          </div>
+        </article>
+
+        <article class="card" data-cat="saas">
+          <div class="card-top"><span class="card-cat">Productivity</span><span class="card-stack-badge">Full-stack</span></div>
+          <h3 class="card-title">Expense Splitter</h3>
+          <p class="card-desc">A Splitwise-style group expense tracker: create a group, log shared expenses, and see who owes whom — with a spending-by-category chart on the frontend.</p>
+          <ul class="card-features">
+            <li>Group membership model with per-member expense splits</li>
+            <li>JWT-secured REST API over Spring Data JPA</li>
+            <li>React dashboard with category breakdown charts</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Spring Boot</span><span class="tag">JWT</span><span class="tag">React</span><span class="tag">Recharts</span>
+          </div>
+        </article>
+
+        <article class="card" data-cat="ecommerce">
+          <div class="card-top"><span class="card-cat">E-commerce</span><span class="card-stack-badge">Frontend + API</span></div>
+          <h3 class="card-title">ShopEx</h3>
+          <p class="card-desc">A second e-commerce build focused on the storefront-to-admin loop: browse, add to cart, check out, and see order confirmation — with an admin login that manages the product catalog directly.</p>
+          <ul class="card-features">
+            <li>Separate customer and admin auth flows</li>
+            <li>Product creation and management from the admin panel</li>
+            <li>Order history and confirmation pages, token-based API client</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">Vite</span><span class="tag">REST API</span><span class="tag">JWT</span>
+          </div>
+        </article>
+
+        <article class="card" data-cat="education">
+          <div class="card-top"><span class="card-cat">Education</span><span class="card-stack-badge">Full-stack</span></div>
+          <h3 class="card-title">Course Manager</h3>
+          <p class="card-desc">A course and assignment platform: instructors post courses and assignments, students submit work, and results get compiled into a downloadable PDF report.</p>
+          <ul class="card-features">
+            <li>Assignment submission workflow with status and priority tracking</li>
+            <li>Server-side PDF generation for results (Spring + Thymeleaf)</li>
+            <li>Category/subject filtering on a Tailwind-styled React frontend</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Spring Boot</span><span class="tag">JWT</span><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">PDF</span>
+          </div>
+        </article>
+
+        <article class="card" data-cat="ecommerce">
+          <div class="card-top"><span class="card-cat">E-commerce</span><span class="card-stack-badge">Server-rendered</span></div>
+          <h3 class="card-title">Shoping Website</h3>
+          <p class="card-desc">A server-rendered take on e-commerce using Thymeleaf instead of a separate frontend framework — full catalog, cart, checkout, and an admin dashboard for managing products and orders in one codebase.</p>
+          <ul class="card-features">
+            <li>Spring MVC + Thymeleaf templates, no separate frontend build</li>
+            <li>Admin dashboard for product and order management</li>
+            <li>Spring Security-backed login and registration</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Java</span><span class="tag">Spring MVC</span><span class="tag">Thymeleaf</span><span class="tag">Spring Security</span>
+          </div>
+        </article>
+
+        <article class="card" data-cat="platform">
+          <div class="card-top"><span class="card-cat">Platform</span><span class="card-stack-badge">Backend-focused</span></div>
+          <h3 class="card-title">Nexora — Auth &amp; RBAC Service</h3>
+          <p class="card-desc">A standalone authentication service built to be reusable: JWT issuing, password hashing, and a Role/Permission model designed as its own building block rather than bolted onto one app — paired with an Angular client using route guards and an HTTP interceptor.</p>
+          <ul class="card-features">
+            <li>Stateless JWT auth filter chain with Spring Security</li>
+            <li>Role and Permission entities for fine-grained access control</li>
+            <li>Angular auth guards + interceptor for token attachment</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Spring Boot</span><span class="tag">Spring Security</span><span class="tag">JWT</span><span class="tag">Angular</span>
+          </div>
+        </article>
+
+        <article class="card" data-cat="platform">
+          <div class="card-top"><span class="card-cat">Platform</span><span class="card-stack-badge">Frontend</span></div>
+          <h3 class="card-title">Dashboard UI Kit</h3>
+          <p class="card-desc">A componentized Angular admin dashboard — profile summary, stats cards, and a quick-draft panel — built as a reusable layout shell for internal tools rather than a single app.</p>
+          <ul class="card-features">
+            <li>Standalone Angular components with a shared header/sidebar shell</li>
+            <li>Profile and stats cards designed for reuse across projects</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Angular</span><span class="tag">TypeScript</span><span class="tag">Component architecture</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK / SKILLS as config files -->
+  <section id="stack">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Toolbox</div>
+        <h2 class="section-title">Core technologies</h2>
+        <p class="section-desc">The languages, frameworks, and tools used consistently across these nine projects.</p>
+      </div>
+
+      <div class="config-grid">
+        <div class="config-file">
+          <div class="config-head"><span class="fdot"></span>pom.xml — backend</div>
+          <div class="config-body"><span class="com">&lt;!-- core --&gt;</span>
+&lt;<span class="tagname">dependency</span>&gt;<span class="valname">java</span>&lt;/<span class="tagname">dependency</span>&gt;      <span class="str">21</span>
+&lt;<span class="tagname">dependency</span>&gt;<span class="valname">spring-boot</span>&lt;/<span class="tagname">dependency</span>&gt; <span class="str">3.x</span>
+&lt;<span class="tagname">dependency</span>&gt;<span class="valname">spring-security</span>&lt;/<span class="tagname">dependency</span>&gt;
+&lt;<span class="tagname">dependency</span>&gt;<span class="valname">spring-data-jpa</span>&lt;/<span class="tagname">dependency</span>&gt;
+&lt;<span class="tagname">dependency</span>&gt;<span class="valname">jjwt</span>&lt;/<span class="tagname">dependency</span>&gt;        <span class="com">// JWT auth</span>
+&lt;<span class="tagname">dependency</span>&gt;<span class="valname">postgresql</span>&lt;/<span class="tagname">dependency</span>&gt;
+&lt;<span class="tagname">dependency</span>&gt;<span class="valname">flyway-core</span>&lt;/<span class="tagname">dependency</span>&gt;
+&lt;<span class="tagname">dependency</span>&gt;<span class="valname">lombok</span>&lt;/<span class="tagname">dependency</span>&gt;
+&lt;<span class="tagname">dependency</span>&gt;<span class="valname">thymeleaf</span>&lt;/<span class="tagname">dependency</span>&gt;   <span class="com">// server-rendered views</span></div>
+        </div>
+
+        <div class="config-file">
+          <div class="config-head"><span class="fdot"></span>package.json — frontend</div>
+          <div class="config-body">{
+  <span class="tagname">"dependencies"</span>: {
+    <span class="str">"react"</span>: <span class="valname">"^18"</span>,
+    <span class="str">"@angular/core"</span>: <span class="valname">"^21"</span>,
+    <span class="str">"react-router-dom"</span>: <span class="valname">"^7"</span>,
+    <span class="str">"axios"</span>: <span class="valname">"latest"</span>,
+    <span class="str">"tailwindcss"</span>: <span class="valname">"^3"</span>,
+    <span class="str">"recharts"</span>: <span class="valname">"^3"</span>,
+    <span class="str">"typescript"</span>: <span class="valname">"^5"</span>,
+    <span class="str">"vite"</span>: <span class="valname">"^5"</span>
+  }
+}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">How I work</div>
+        <h2 class="section-title">A consistent approach to every build</h2>
+      </div>
+      <div class="approach-grid">
+        <div class="approach-card">
+          <div class="num">schema first</div>
+          <h4>Model the data before the screen</h4>
+          <p>Entities, relationships, and migrations get designed before a single component is built — every project here has a real schema behind it, not mock JSON.</p>
+        </div>
+        <div class="approach-card">
+          <div class="num">auth by default</div>
+          <h4>JWT and role checks aren't an afterthought</h4>
+          <p>Every multi-user app in this list ships with Spring Security, token-based auth, and — where it matters — a permission layer, not just a login screen.</p>
+        </div>
+        <div class="approach-card">
+          <div class="num">built to be used</div>
+          <h4>Admin panels, not just APIs</h4>
+          <p>Most of these projects include a functional admin or dashboard view, on the principle that an API only I can operate isn't a finished product.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-panel">
+        <h2>Looking for a full-stack developer for your next project? <span class="em">Let's connect.</span></h2>
+        <div class="contact-links">
+          <a href="mailto:basitjatoi17@gmail.com" class="btn-primary">basitjatoi17@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+    <span>© <span id="year"></span> Abdul Basit. Full-stack developer — Java, Spring Boot, React, Angular.</span>
+    <span>abdulbasit-j.github.io/portfolio</span>
+  </div>
 </footer>
 
 <script>
-  const roles = ["Full-Stack Developer", "Java & Spring Boot Engineer", "React Developer"];
-  const roleEl = document.getElementById('roleText');
-  const cursor = '<span class="cursor">&nbsp;</span>';
-  let ri = 0, ci = 0, deleting = false;
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-  function tick(){
-    const current = roles[ri];
-    if(!deleting){
-      ci++;
-      if(ci > current.length){ deleting = true; setTimeout(tick, 1200); return; }
-    } else {
-      ci--;
-      if(ci < 0){ deleting = false; ri = (ri+1) % roles.length; ci = 0; }
-    }
-    roleEl.innerHTML = current.slice(0, ci) + cursor;
-    setTimeout(tick, deleting ? 40 : 80);
+  // Filters
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.card');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      cards.forEach(card => {
+        card.style.display = (f === 'all' || card.dataset.cat === f) ? 'flex' : 'none';
+      });
+    });
+  });
+
+  // Stack ticker
+  const stack = ["Java", "Spring Boot", "Spring Security", "JWT", "PostgreSQL", "Flyway", "React", "Angular", "TypeScript", "Tailwind CSS", "REST APIs", "Thymeleaf", "Supabase", "Vite"];
+  const track = document.getElementById('stackTrack');
+  const doubled = [...stack, ...stack];
+  track.innerHTML = doubled.map(s => `<span>${s}</span>`).join('');
+
+  // Terminal animation
+  const requests = [
+    { prompt: '$', req: 'curl -X POST /api/auth/login', info: '(VelourStyle)', ok: '200 OK · JWT issued' },
+    { prompt: '$', req: 'curl -X GET /api/products?category=jackets&sort=NEWEST', info: '(VelourStyle)', ok: '200 OK · 12 items' },
+    { prompt: '$', req: 'curl -X GET /api/courses?category=Web+Development', info: '(Course Manager)', ok: '200 OK · 8 courses' },
+    { prompt: '$', req: 'curl -X POST /api/groups/4/expenses', info: '(Expense Splitter)', ok: '201 Created · split saved' },
+    { prompt: '$', req: 'curl -X GET /api/workspaces/acme-agency/projects', info: '(Portly)', ok: '200 OK · 3 active projects' },
+    { prompt: '$', req: 'curl -X GET /api/users/me', info: '(UNI — role: student)', ok: '200 OK · profile loaded' },
+  ];
+
+  const body = document.getElementById('termBody');
+  let reqIndex = 0;
+
+  function typeLine(text, className, cb, speed = 18){
+    const el = document.createElement('div');
+    el.className = 'line ' + className;
+    body.appendChild(el);
+    let i = 0;
+    const timer = setInterval(() => {
+      el.textContent = text.slice(0, i+1);
+      i++;
+      body.scrollTop = body.scrollHeight;
+      if(i >= text.length){
+        clearInterval(timer);
+        if(cb) cb();
+      }
+    }, speed);
   }
-  if(roleEl){ setTimeout(tick, 600); }
+
+  function runCycle(){
+    if (body.children.length > 14) body.innerHTML = '';
+    const r = requests[reqIndex % requests.length];
+    reqIndex++;
+    typeLine(`${r.prompt} ${r.req}`, 'req', () => {
+      const infoEl = document.createElement('div');
+      infoEl.className = 'line info';
+      infoEl.textContent = r.info;
+      body.appendChild(infoEl);
+      setTimeout(() => {
+        const okEl = document.createElement('div');
+        okEl.className = 'line ok';
+        okEl.textContent = '→ ' + r.ok;
+        body.appendChild(okEl);
+        body.scrollTop = body.scrollHeight;
+        setTimeout(runCycle, 1400);
+      }, 260);
+    }, 14);
+  }
+  runCycle();
 </script>
 
 </body>
